@@ -14,7 +14,7 @@ const App = () => {
     try {
       const parsedData = JSON.parse(jsonData);
       const response = await fetch(
-        "https://bajajfinservprojaayushnandan22bcs10282.onrender.com",
+        "https://bajajfinservprojaayushnandan22bcs10282.onrender.com/bfhl",
         {
           method: "POST",
           headers: {
