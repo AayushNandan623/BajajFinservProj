@@ -13,13 +13,16 @@ const App = () => {
   const handleSubmit = async () => {
     try {
       const parsedData = JSON.parse(jsonData);
-      const response = await fetch("http://localhost:5000/bfhl", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ data: parsedData.data }),
-      });
+      const response = await fetch(
+        "https://bajajfinservprojaayushnandan22bcs10282.onrender.com",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ data: parsedData.data }),
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Network response was not ok");
