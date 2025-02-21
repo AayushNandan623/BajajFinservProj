@@ -8,7 +8,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://bajajfinservprojaayushnandanfrontend.onrender.com",
+    origin: "https://bajajfinservprojaayushnandan22bcs10282fr.onrender.com",
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"],
   })
